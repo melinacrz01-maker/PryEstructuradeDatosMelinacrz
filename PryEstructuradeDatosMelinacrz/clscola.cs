@@ -13,5 +13,20 @@ namespace PryEstructuradeDatosMelinacrz
 
         internal clsnodo Primero { get => primero; set => primero = value; }
         internal clsnodo Ultimo { get => ultimo; set => ultimo = value; }
+
+        public void agregar (clsnodo Nuevo)
+        {
+            if (Primero == null)
+            {
+                Primero = Nuevo;
+                Ultimo = Nuevo;
+            }
+            else
+            {
+                Ultimo.siguiente = Nuevo;
+                Ultimo = Nuevo;
+            } 
+            
+        }
     }
 }
