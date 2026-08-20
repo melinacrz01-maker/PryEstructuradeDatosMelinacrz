@@ -16,10 +16,15 @@ namespace PryEstructuradeDatosMelinacrz
         {
             InitializeComponent();
         }
-
+        clscola cola = new clscola();   
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
