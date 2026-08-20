@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PryEstructuradeDatosMelinacrz
 {
@@ -14,7 +15,7 @@ namespace PryEstructuradeDatosMelinacrz
         internal clsnodo Primero { get => primero; set => primero = value; }
         internal clsnodo Ultimo { get => ultimo; set => ultimo = value; }
 
-        public void agregar (clsnodo Nuevo)
+        public void agregar(clsnodo Nuevo)
         {
             if (Primero == null)
             {
@@ -25,8 +26,23 @@ namespace PryEstructuradeDatosMelinacrz
             {
                 Ultimo.siguiente = Nuevo;
                 Ultimo = Nuevo;
-            } 
-            
+            }
+
+        }
+        public void recorrrer(ListBox lstcola)
+        {
+            lstcola.Items.Clear();
+
+            clsnodo aux = Primero;
+            while (aux != null)
+            {
+                lstcola.Items.Add(aux.Codigo);
+                aux = aux.siguiente;
+            }
         }
     }
 }
+
+
+
+           

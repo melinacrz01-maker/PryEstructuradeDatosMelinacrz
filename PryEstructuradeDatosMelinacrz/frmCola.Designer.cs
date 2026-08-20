@@ -148,7 +148,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTabla.Location = new System.Drawing.Point(386, 213);
+            this.dgvTabla.Location = new System.Drawing.Point(395, 213);
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.Size = new System.Drawing.Size(342, 175);
             this.dgvTabla.TabIndex = 3;

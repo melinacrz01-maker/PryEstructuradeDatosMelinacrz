@@ -19,12 +19,13 @@ namespace PryEstructuradeDatosMelinacrz
 
         private void frmenu_Load(object sender, EventArgs e)
         {
+           
 
         }
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmCola cola = new frmCola(); cola.Show();
         }
     }
 }
