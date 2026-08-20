@@ -45,6 +45,11 @@
             this.consultaDeBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nombreYApellidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.añoAcademicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +81,12 @@
             // datosDelDesarroladorToolStripMenuItem
             // 
             this.datosDelDesarroladorToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.datosDelDesarroladorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nombreYApellidoToolStripMenuItem,
+            this.clientesToolStripMenuItem,
+            this.materiaToolStripMenuItem,
+            this.comisionToolStripMenuItem,
+            this.añoAcademicoToolStripMenuItem});
             this.datosDelDesarroladorToolStripMenuItem.Name = "datosDelDesarroladorToolStripMenuItem";
             this.datosDelDesarroladorToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.datosDelDesarroladorToolStripMenuItem.Text = "Datos del Desarrolador";
@@ -108,6 +119,7 @@
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
             this.colaToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.colaToolStripMenuItem.Text = "Cola";
+            this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
             // 
             // pilaToolStripMenuItem
             // 
@@ -211,11 +223,41 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con Operaciones";
             // 
+            // nombreYApellidoToolStripMenuItem
+            // 
+            this.nombreYApellidoToolStripMenuItem.Name = "nombreYApellidoToolStripMenuItem";
+            this.nombreYApellidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nombreYApellidoToolStripMenuItem.Text = "Nombre y apellido";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Carrera";
+            // 
+            // materiaToolStripMenuItem
+            // 
+            this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
+            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiaToolStripMenuItem.Text = "Materia";
+            // 
+            // comisionToolStripMenuItem
+            // 
+            this.comisionToolStripMenuItem.Name = "comisionToolStripMenuItem";
+            this.comisionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comisionToolStripMenuItem.Text = "Comision";
+            // 
+            // añoAcademicoToolStripMenuItem
+            // 
+            this.añoAcademicoToolStripMenuItem.Name = "añoAcademicoToolStripMenuItem";
+            this.añoAcademicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.añoAcademicoToolStripMenuItem.Text = "Año academico";
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(470, 524);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -248,6 +290,11 @@
         private System.Windows.Forms.ToolStripMenuItem consultaDeBaseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem operacionesEnBaseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasVariasConOperacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nombreYApellidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem materiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comisionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem añoAcademicoToolStripMenuItem;
     }
 }
 

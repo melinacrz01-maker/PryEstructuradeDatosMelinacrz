@@ -21,5 +21,10 @@ namespace PryEstructuradeDatosMelinacrz
         {
 
         }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
