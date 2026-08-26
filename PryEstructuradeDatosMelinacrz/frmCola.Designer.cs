@@ -35,8 +35,8 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.lbltramite = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listaDatos = new System.Windows.Forms.ListBox();
+            this.lblcodigo = new System.Windows.Forms.Label();
+            this.lstListado = new System.Windows.Forms.ListBox();
             this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,9 +46,9 @@
             this.txtramit = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbltramt = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCode = new System.Windows.Forms.Label();
             this.grbdatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.grbElemento.SuspendLayout();
@@ -63,7 +63,7 @@
             this.grbdatos.Controls.Add(this.txtCode);
             this.grbdatos.Controls.Add(this.lbltramite);
             this.grbdatos.Controls.Add(this.lblName);
-            this.grbdatos.Controls.Add(this.label1);
+            this.grbdatos.Controls.Add(this.lblcodigo);
             this.grbdatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbdatos.ForeColor = System.Drawing.Color.Navy;
             this.grbdatos.Location = new System.Drawing.Point(12, 25);
@@ -72,6 +72,7 @@
             this.grbdatos.TabIndex = 0;
             this.grbdatos.TabStop = false;
             this.grbdatos.Text = "Datos";
+            this.grbdatos.Enter += new System.EventHandler(this.grbdatos_Enter);
             // 
             // btnAgregar
             // 
@@ -124,23 +125,23 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Nombre:";
             // 
-            // label1
+            // lblcodigo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Codigo:";
+            this.lblcodigo.AutoSize = true;
+            this.lblcodigo.Location = new System.Drawing.Point(19, 34);
+            this.lblcodigo.Name = "lblcodigo";
+            this.lblcodigo.Size = new System.Drawing.Size(56, 15);
+            this.lblcodigo.TabIndex = 0;
+            this.lblcodigo.Text = "Codigo:";
             // 
-            // listaDatos
+            // lstListado
             // 
-            this.listaDatos.FormattingEnabled = true;
-            this.listaDatos.Location = new System.Drawing.Point(12, 215);
-            this.listaDatos.Name = "listaDatos";
-            this.listaDatos.Size = new System.Drawing.Size(338, 173);
-            this.listaDatos.TabIndex = 2;
-            this.listaDatos.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lstListado.FormattingEnabled = true;
+            this.lstListado.Location = new System.Drawing.Point(12, 215);
+            this.lstListado.Name = "lstListado";
+            this.lstListado.Size = new System.Drawing.Size(338, 173);
+            this.lstListado.TabIndex = 2;
+            this.lstListado.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // dgvTabla
             // 
@@ -176,9 +177,9 @@
             this.grbElemento.Controls.Add(this.txtramit);
             this.grbElemento.Controls.Add(this.txtname);
             this.grbElemento.Controls.Add(this.txtCodigo);
-            this.grbElemento.Controls.Add(this.label2);
-            this.grbElemento.Controls.Add(this.label3);
-            this.grbElemento.Controls.Add(this.label4);
+            this.grbElemento.Controls.Add(this.lbltramt);
+            this.grbElemento.Controls.Add(this.lblNombre);
+            this.grbElemento.Controls.Add(this.lblCode);
             this.grbElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbElemento.ForeColor = System.Drawing.Color.Navy;
             this.grbElemento.Location = new System.Drawing.Point(386, 25);
@@ -198,6 +199,7 @@
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = " 🗑️ Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtramit
             // 
@@ -220,32 +222,32 @@
             this.txtCodigo.Size = new System.Drawing.Size(122, 21);
             this.txtCodigo.TabIndex = 3;
             // 
-            // label2
+            // lbltramt
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tramite:";
+            this.lbltramt.AutoSize = true;
+            this.lbltramt.Location = new System.Drawing.Point(13, 106);
+            this.lbltramt.Name = "lbltramt";
+            this.lbltramt.Size = new System.Drawing.Size(60, 15);
+            this.lbltramt.TabIndex = 2;
+            this.lbltramt.Text = "Tramite:";
             // 
-            // label3
+            // lblNombre
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Nombre:";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(13, 68);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(62, 15);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre:";
             // 
-            // label4
+            // lblCode
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 15);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Codigo:";
+            this.lblCode.AutoSize = true;
+            this.lblCode.Location = new System.Drawing.Point(13, 31);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(56, 15);
+            this.lblCode.TabIndex = 0;
+            this.lblCode.Text = "Codigo:";
             // 
             // frmCola
             // 
@@ -255,7 +257,7 @@
             this.ClientSize = new System.Drawing.Size(749, 413);
             this.Controls.Add(this.grbElemento);
             this.Controls.Add(this.dgvTabla);
-            this.Controls.Add(this.listaDatos);
+            this.Controls.Add(this.lstListado);
             this.Controls.Add(this.grbdatos);
             this.Name = "frmCola";
             this.Text = "frmCola";
@@ -273,8 +275,8 @@
         private System.Windows.Forms.GroupBox grbdatos;
         private System.Windows.Forms.Label lbltramite;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listaDatos;
+        private System.Windows.Forms.Label lblcodigo;
+        private System.Windows.Forms.ListBox lstListado;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.TextBox txtNombre;
@@ -285,9 +287,9 @@
         private System.Windows.Forms.TextBox txtramit;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbltramt;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

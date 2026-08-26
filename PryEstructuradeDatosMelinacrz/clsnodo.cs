@@ -8,9 +8,9 @@ namespace PryEstructuradeDatosMelinacrz
 {
     internal class clsnodo
     {
-        private int codigo;
-        private string nombre;
-        private int codigo1;
+        public int codigo;
+        public string nombre;
+        public int codigo1;
 
         public clsnodo siguiente;
 

@@ -16,7 +16,8 @@ namespace PryEstructuradeDatosMelinacrz
         {
             InitializeComponent ();
         }
-
+        clscola objcola = new clscola();
+        clsnodo objnodo = new clsnodo();
         private void frmenu_Load(object sender, EventArgs e)
         {
            
