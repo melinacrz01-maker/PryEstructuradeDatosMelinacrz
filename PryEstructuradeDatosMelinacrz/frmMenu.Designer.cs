@@ -31,6 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDelDesarroladorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nombreYApellidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.añoAcademicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructuraLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,11 +50,6 @@
             this.consultaDeBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.operacionesEnBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nombreYApellidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.añoAcademicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +91,36 @@
             this.datosDelDesarroladorToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.datosDelDesarroladorToolStripMenuItem.Text = "Datos del Desarrolador";
             // 
+            // nombreYApellidoToolStripMenuItem
+            // 
+            this.nombreYApellidoToolStripMenuItem.Name = "nombreYApellidoToolStripMenuItem";
+            this.nombreYApellidoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.nombreYApellidoToolStripMenuItem.Text = "Nombre y apellido";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.clientesToolStripMenuItem.Text = "Carrera";
+            // 
+            // materiaToolStripMenuItem
+            // 
+            this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
+            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.materiaToolStripMenuItem.Text = "Materia";
+            // 
+            // comisionToolStripMenuItem
+            // 
+            this.comisionToolStripMenuItem.Name = "comisionToolStripMenuItem";
+            this.comisionToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.comisionToolStripMenuItem.Text = "Comision";
+            // 
+            // añoAcademicoToolStripMenuItem
+            // 
+            this.añoAcademicoToolStripMenuItem.Name = "añoAcademicoToolStripMenuItem";
+            this.añoAcademicoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.añoAcademicoToolStripMenuItem.Text = "Año academico";
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -128,6 +158,7 @@
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
             this.pilaToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.pilaToolStripMenuItem.Text = "Pila";
+            this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // listaEnlazadaSimpleToolStripMenuItem
             // 
@@ -222,36 +253,6 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Name = "consultasVariasConOperacionesToolStripMenuItem";
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas varias con Operaciones";
-            // 
-            // nombreYApellidoToolStripMenuItem
-            // 
-            this.nombreYApellidoToolStripMenuItem.Name = "nombreYApellidoToolStripMenuItem";
-            this.nombreYApellidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nombreYApellidoToolStripMenuItem.Text = "Nombre y apellido";
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Carrera";
-            // 
-            // materiaToolStripMenuItem
-            // 
-            this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
-            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.materiaToolStripMenuItem.Text = "Materia";
-            // 
-            // comisionToolStripMenuItem
-            // 
-            this.comisionToolStripMenuItem.Name = "comisionToolStripMenuItem";
-            this.comisionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.comisionToolStripMenuItem.Text = "Comision";
-            // 
-            // añoAcademicoToolStripMenuItem
-            // 
-            this.añoAcademicoToolStripMenuItem.Name = "añoAcademicoToolStripMenuItem";
-            this.añoAcademicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.añoAcademicoToolStripMenuItem.Text = "Año academico";
             // 
             // frmMenu
             // 

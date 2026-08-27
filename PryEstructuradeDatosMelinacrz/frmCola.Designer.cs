@@ -261,6 +261,7 @@
             this.Controls.Add(this.grbdatos);
             this.Name = "frmCola";
             this.Text = "frmCola";
+            this.Load += new System.EventHandler(this.frmCola_Load);
             this.grbdatos.ResumeLayout(false);
             this.grbdatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();

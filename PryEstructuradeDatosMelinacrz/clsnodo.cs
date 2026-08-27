@@ -10,12 +10,12 @@ namespace PryEstructuradeDatosMelinacrz
     {
         public int codigo;
         public string nombre;
-        public int codigo1;
+        public string tramite;
 
         public clsnodo siguiente;
 
-        public int Codigo1 { get => codigo; set => codigo = value; }
+        public int Codigo { get => codigo; set => codigo = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public int Codigo { get => codigo1; set => codigo1 = value; }
+        public string Tramite { get => tramite; set => tramite = value; }
     }
 }

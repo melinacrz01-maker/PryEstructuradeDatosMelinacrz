@@ -22,18 +22,18 @@ namespace PryEstructuradeDatosMelinacrz
         {
 
         }
-        clscola objcola = new clscola();
-        clsnodo objnodo = new clsnodo();
+        
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            clscola objcola = new clscola();
+            clsnodo objnodo = new clsnodo();
 
             objnodo.Codigo = Convert.ToInt32(txtCodigo.Text);
             objnodo.Nombre = txtname.Text;
-            
+            objnodo.Tramite = txtramit.Text;
 
-
-
-
+            objcola.agregar(objnodo);
+            objcola.recorrrer(lstListado);
 
             txtCodigo.Text = "";
             txtname.Clear();
@@ -48,6 +48,11 @@ namespace PryEstructuradeDatosMelinacrz
         }
 
         private void grbdatos_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCola_Load(object sender, EventArgs e)
         {
 
         }

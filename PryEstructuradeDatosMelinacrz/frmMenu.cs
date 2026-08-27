@@ -28,5 +28,10 @@ namespace PryEstructuradeDatosMelinacrz
         {
             frmCola cola = new frmCola(); cola.Show();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPila pila = new FrmPila(); pila.Show();
+        }
     }
 }
