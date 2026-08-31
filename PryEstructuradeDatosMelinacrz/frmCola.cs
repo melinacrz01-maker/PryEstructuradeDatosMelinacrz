@@ -12,6 +12,8 @@ namespace PryEstructuradeDatosMelinacrz
 {
     public partial class frmCola : Form
     {
+        clscola objcola = new clscola();
+
         public frmCola()
         {
             InitializeComponent();
@@ -22,25 +24,26 @@ namespace PryEstructuradeDatosMelinacrz
         {
 
         }
-        
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            clscola objcola = new clscola();
             clsnodo objnodo = new clsnodo();
-
-            objnodo.Codigo = Convert.ToInt32(txtCodigo.Text);
-            objnodo.Nombre = txtname.Text;
-            objnodo.Tramite = txtramit.Text;
+            objnodo.Codigo = Convert.ToInt32(txtCode.Text);    
+            objnodo.Nombre = txtNombre.Text;
+            objnodo.Tramite = txtTramite.Text;
 
             objcola.agregar(objnodo);
             objcola.recorrrer(lstListado);
+            objcola.recorrer(dgvTabla);
 
-            txtCodigo.Text = "";
-            txtname.Clear();
-            txtramit.Clear();
+            MessageBox.Show("agregado correctamente");
 
-
+            txtCode.Clear();
+            txtNombre.Clear();
+            txtTramite.Clear();
         }
+
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {

@@ -29,6 +29,20 @@ namespace PryEstructuradeDatosMelinacrz
             }
 
         }
+
+        public void eliminar()
+        {
+            if (Primero == null)
+            {
+                Primero = null;
+                Ultimo = null;
+            }
+            else
+            {
+                Primero = Primero.siguiente;
+            }
+        }
+
         public void recorrrer(ListBox lstcola)
         {
             lstcola.Items.Clear();
@@ -37,6 +51,17 @@ namespace PryEstructuradeDatosMelinacrz
             while (aux != null)
             {
                 lstcola.Items.Add(aux.Codigo);
+                aux = aux.siguiente;
+            }
+        }
+
+        public void recorrer(DataGridView dgvcola)
+        {
+            dgvcola.Rows.Clear();
+            clsnodo aux = Primero;
+            while (aux != null)
+            {
+                dgvcola.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
                 aux = aux.siguiente;
             }
         }
