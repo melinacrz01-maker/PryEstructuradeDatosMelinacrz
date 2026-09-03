@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.grpElemento = new System.Windows.Forms.GroupBox();
-            this.grpEliminar = new System.Windows.Forms.GroupBox();
-            this.lblCode = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblTramite = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtTramite = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.lblTramite = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblCode = new System.Windows.Forms.Label();
+            this.grpEliminar = new System.Windows.Forms.GroupBox();
             this.txtTram = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtCode = new System.Windows.Forms.TextBox();
@@ -44,7 +44,7 @@
             this.lblTramte = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvgrillapila = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +52,7 @@
             this.lstPila = new System.Windows.Forms.ListBox();
             this.grpElemento.SuspendLayout();
             this.grpEliminar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvgrillapila)).BeginInit();
             this.grbgrilla.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,73 @@
             this.grpElemento.TabStop = false;
             this.grpElemento.Text = "Nuevo Elemento";
             // 
+            // txtTramite
+            // 
+            this.txtTramite.Location = new System.Drawing.Point(72, 93);
+            this.txtTramite.Name = "txtTramite";
+            this.txtTramite.Size = new System.Drawing.Size(100, 20);
+            this.txtTramite.TabIndex = 6;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(72, 63);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 5;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(72, 32);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 4;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Lavender;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Navy;
+            this.btnAgregar.Location = new System.Drawing.Point(77, 137);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(95, 30);
+            this.btnAgregar.TabIndex = 3;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // lblTramite
+            // 
+            this.lblTramite.AutoSize = true;
+            this.lblTramite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblTramite.Location = new System.Drawing.Point(6, 98);
+            this.lblTramite.Name = "lblTramite";
+            this.lblTramite.Size = new System.Drawing.Size(60, 15);
+            this.lblTramite.TabIndex = 2;
+            this.lblTramite.Text = "Tràmite:";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblName.Location = new System.Drawing.Point(6, 64);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(62, 15);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Nombre:";
+            // 
+            // lblCode
+            // 
+            this.lblCode.AutoSize = true;
+            this.lblCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblCode.Location = new System.Drawing.Point(10, 33);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(56, 15);
+            this.lblCode.TabIndex = 0;
+            this.lblCode.Text = "Còdigo:";
+            // 
             // grpEliminar
             // 
             this.grpEliminar.Controls.Add(this.txtTram);
@@ -87,73 +154,6 @@
             this.grpEliminar.TabIndex = 1;
             this.grpEliminar.TabStop = false;
             this.grpEliminar.Text = "Eliminar Elemento";
-            // 
-            // lblCode
-            // 
-            this.lblCode.AutoSize = true;
-            this.lblCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblCode.Location = new System.Drawing.Point(10, 33);
-            this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(56, 15);
-            this.lblCode.TabIndex = 0;
-            this.lblCode.Text = "Còdigo:";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblName.Location = new System.Drawing.Point(6, 64);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(62, 15);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Nombre:";
-            // 
-            // lblTramite
-            // 
-            this.lblTramite.AutoSize = true;
-            this.lblTramite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblTramite.Location = new System.Drawing.Point(6, 98);
-            this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(60, 15);
-            this.lblTramite.TabIndex = 2;
-            this.lblTramite.Text = "Tràmite:";
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Lavender;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.Navy;
-            this.btnAgregar.Location = new System.Drawing.Point(77, 137);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(95, 30);
-            this.btnAgregar.TabIndex = 3;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(72, 32);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 4;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(72, 63);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // txtTramite
-            // 
-            this.txtTramite.Location = new System.Drawing.Point(72, 93);
-            this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(100, 20);
-            this.txtTramite.TabIndex = 6;
             // 
             // txtTram
             // 
@@ -187,6 +187,7 @@
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblTramte
             // 
@@ -221,17 +222,17 @@
             this.lblCodigo.TabIndex = 7;
             this.lblCodigo.Text = "Còdigo:";
             // 
-            // dataGridView1
+            // dgvgrillapila
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvgrillapila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvgrillapila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(321, 15);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(333, 168);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvgrillapila.Location = new System.Drawing.Point(321, 15);
+            this.dgvgrillapila.Name = "dgvgrillapila";
+            this.dgvgrillapila.Size = new System.Drawing.Size(333, 168);
+            this.dgvgrillapila.TabIndex = 2;
             // 
             // Column1
             // 
@@ -251,7 +252,7 @@
             // grbgrilla
             // 
             this.grbgrilla.Controls.Add(this.lstPila);
-            this.grbgrilla.Controls.Add(this.dataGridView1);
+            this.grbgrilla.Controls.Add(this.dgvgrillapila);
             this.grbgrilla.Location = new System.Drawing.Point(52, 251);
             this.grbgrilla.Name = "grbgrilla";
             this.grbgrilla.Size = new System.Drawing.Size(695, 204);
@@ -278,11 +279,12 @@
             this.Controls.Add(this.grbgrilla);
             this.Name = "FrmPila";
             this.Text = "FrmPila";
+            this.Load += new System.EventHandler(this.FrmPila_Load);
             this.grpElemento.ResumeLayout(false);
             this.grpElemento.PerformLayout();
             this.grpEliminar.ResumeLayout(false);
             this.grpEliminar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvgrillapila)).EndInit();
             this.grbgrilla.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -306,7 +308,7 @@
         private System.Windows.Forms.Label lblTramte;
         private System.Windows.Forms.Label lblnombre;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvgrillapila;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
