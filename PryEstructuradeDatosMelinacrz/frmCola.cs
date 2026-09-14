@@ -43,11 +43,15 @@ namespace PryEstructuradeDatosMelinacrz
             txtTramite.Clear();
         }
 
-
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            clsnodo objnodo = new clsnodo();
+            objnodo.Codigo = Convert.ToInt32(txtCodigo.Text);
+            objnodo.Nombre = txtname.Text;
+            objnodo.Tramite = txtramit.Text;
 
+            objcola.EliminarCola(objnodo, lstListado);
+            objcola.EliminarCola(objnodo, dgvTabla);
         }
 
         private void grbdatos_Enter(object sender, EventArgs e)

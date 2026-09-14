@@ -30,19 +30,6 @@ namespace PryEstructuradeDatosMelinacrz
 
         }
 
-        public void eliminar()
-        {
-            if (Primero == null)
-            {
-                Primero = null;
-                Ultimo = null;
-            }
-            else
-            {
-                Primero = Primero.siguiente;
-            }
-        }
-
         public void recorrrer(ListBox lstcola)
         {
             lstcola.Items.Clear();
@@ -65,9 +52,80 @@ namespace PryEstructuradeDatosMelinacrz
                 aux = aux.siguiente;
             }
         }
+
+        //En una cola (FIFO) solo se puede sacar el frente: el primero que se agrego
+        public clsnodo EliminarCola()
+        {
+            if (Primero == null)
+            {
+                return null;
+            }
+
+            clsnodo frente = Primero;
+
+            Primero = frente.siguiente;
+
+            if (Primero == null)
+            {
+                Ultimo = null;
+            }
+            else
+            {
+                Primero.anterior = null;
+            }
+
+            frente.siguiente = null;
+
+            return frente;
+        }
+
+        //Atiende de a uno hasta sacar el nodo con ese codigo.
+        //Sigue siendo cola: adentro solo llama a EliminarCola (Dequeue).
+        //Devuelve cuantos nodos se atendieron, 0 si el codigo no estaba.
+        public int EliminarColaHasta(int codigo)
+        {
+            //Primero verifico que exista, si no la cola se vaciaria buscandolo
+            clsnodo aux = Primero;
+
+            while (aux != null && aux.Codigo != codigo)
+            {
+                aux = aux.siguiente;
+            }
+
+            if (aux == null)
+            {
+                return 0;
+            }
+
+            int cantidad = 0;
+            clsnodo frente;
+
+            do
+            {
+                frente = EliminarCola();
+                cantidad++;
+            }
+            while (frente.Codigo != codigo);
+
+            return cantidad;
+        }
+
+        public int EliminarCola(clsnodo nodoAEliminar, ListBox lstcola)
+        {
+            int cantidad = EliminarColaHasta(nodoAEliminar.Codigo);
+
+            recorrrer(lstcola);
+
+            return cantidad;
+        }
+
+        public int EliminarCola(clsnodo nodoAEliminar, DataGridView dgvcola)
+        {
+            int cantidad = EliminarColaHasta(nodoAEliminar.Codigo);
+
+            recorrer(dgvcola);
+
+            return cantidad;
+        }
     }
 }
-
-
-
-           
