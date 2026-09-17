@@ -37,6 +37,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.grpEliminar = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblCodg = new System.Windows.Forms.Label();
             this.lstLista = new System.Windows.Forms.ListBox();
@@ -44,11 +45,13 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.grbGrilladatos = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpElemento.SuspendLayout();
             this.grpEliminar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).BeginInit();
+            this.grbGrilladatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpElemento
@@ -151,6 +154,14 @@
             this.grpEliminar.TabStop = false;
             this.grpEliminar.Text = "Elemento a Eliminar";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(89, 53);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(150, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -176,9 +187,9 @@
             // lstLista
             // 
             this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(120, 312);
+            this.lstLista.Location = new System.Drawing.Point(17, 35);
             this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(190, 147);
+            this.lstLista.Size = new System.Drawing.Size(286, 147);
             this.lstLista.TabIndex = 2;
             // 
             // dgvTable
@@ -188,7 +199,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTable.Location = new System.Drawing.Point(394, 312);
+            this.dgvTable.Location = new System.Drawing.Point(356, 32);
             this.dgvTable.Name = "dgvTable";
             this.dgvTable.Size = new System.Drawing.Size(342, 150);
             this.dgvTable.TabIndex = 3;
@@ -208,34 +219,37 @@
             this.Column3.HeaderText = "Tramite";
             this.Column3.Name = "Column3";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(89, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 21);
-            this.comboBox1.TabIndex = 7;
-            // 
             // grbGrilladatos
             // 
             this.grbGrilladatos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.grbGrilladatos.Controls.Add(this.lstLista);
+            this.grbGrilladatos.Controls.Add(this.dgvTable);
             this.grbGrilladatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbGrilladatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.grbGrilladatos.Location = new System.Drawing.Point(97, 280);
+            this.grbGrilladatos.Location = new System.Drawing.Point(12, 280);
             this.grbGrilladatos.Name = "grbGrilladatos";
-            this.grbGrilladatos.Size = new System.Drawing.Size(678, 205);
+            this.grbGrilladatos.Size = new System.Drawing.Size(763, 205);
             this.grbGrilladatos.TabIndex = 4;
             this.grbGrilladatos.TabStop = false;
             this.grbGrilladatos.Text = "Listado en una lista y una Grilla";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources._0_F7Qnr7Zs_dobles_s_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 199);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(826, 497);
-            this.Controls.Add(this.dgvTable);
-            this.Controls.Add(this.lstLista);
+            this.ClientSize = new System.Drawing.Size(808, 497);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpEliminar);
             this.Controls.Add(this.grpElemento);
             this.Controls.Add(this.grbGrilladatos);
@@ -247,6 +261,8 @@
             this.grpEliminar.ResumeLayout(false);
             this.grpEliminar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).EndInit();
+            this.grbGrilladatos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +287,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox grbGrilladatos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
