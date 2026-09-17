@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clscola.cs" />
+    <Compile Include="Clslistadoble.cs" />
     <Compile Include="clsnodo.cs" />
     <Compile Include="ClsPila.cs" />
     <Compile Include="frmCola.cs">
@@ -121,6 +122,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\0-F7Qnr7Zs-dobles-s-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_a189dfb0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_a189dfb01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_a189dfb02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

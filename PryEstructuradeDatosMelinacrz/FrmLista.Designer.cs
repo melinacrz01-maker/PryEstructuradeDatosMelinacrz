@@ -66,7 +66,7 @@
             this.grpElemento.Controls.Add(this.lblCodigo);
             this.grpElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpElemento.ForeColor = System.Drawing.Color.LightBlue;
-            this.grpElemento.Location = new System.Drawing.Point(228, 33);
+            this.grpElemento.Location = new System.Drawing.Point(253, 36);
             this.grpElemento.Name = "grpElemento";
             this.grpElemento.Size = new System.Drawing.Size(261, 199);
             this.grpElemento.TabIndex = 0;
@@ -147,7 +147,7 @@
             this.grpEliminar.Controls.Add(this.lblCodg);
             this.grpEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.grpEliminar.Location = new System.Drawing.Point(514, 33);
+            this.grpEliminar.Location = new System.Drawing.Point(539, 36);
             this.grpEliminar.Name = "grpEliminar";
             this.grpEliminar.Size = new System.Drawing.Size(261, 199);
             this.grpEliminar.TabIndex = 1;
@@ -187,7 +187,7 @@
             // lstLista
             // 
             this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(17, 35);
+            this.lstLista.Location = new System.Drawing.Point(40, 35);
             this.lstLista.Name = "lstLista";
             this.lstLista.Size = new System.Drawing.Size(286, 147);
             this.lstLista.TabIndex = 2;
@@ -199,7 +199,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTable.Location = new System.Drawing.Point(356, 32);
+            this.dgvTable.Location = new System.Drawing.Point(397, 32);
             this.dgvTable.Name = "dgvTable";
             this.dgvTable.Size = new System.Drawing.Size(342, 150);
             this.dgvTable.TabIndex = 3;
@@ -228,18 +228,19 @@
             this.grbGrilladatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.grbGrilladatos.Location = new System.Drawing.Point(12, 280);
             this.grbGrilladatos.Name = "grbGrilladatos";
-            this.grbGrilladatos.Size = new System.Drawing.Size(763, 205);
+            this.grbGrilladatos.Size = new System.Drawing.Size(788, 205);
             this.grbGrilladatos.TabIndex = 4;
             this.grbGrilladatos.TabStop = false;
             this.grbGrilladatos.Text = "Listado en una lista y una Grilla";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources._0_F7Qnr7Zs_dobles_s_;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 52);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(224, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -248,7 +249,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(808, 497);
+            this.ClientSize = new System.Drawing.Size(810, 497);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpEliminar);
             this.Controls.Add(this.grpElemento);

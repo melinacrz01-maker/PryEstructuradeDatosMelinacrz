@@ -46,9 +46,12 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LstDeDatos = new System.Windows.Forms.ListBox();
             this.grpDate = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpEliminarDoble.SuspendLayout();
             this.grpElementoDoble.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabladedatos)).BeginInit();
+            this.grpDate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpEliminarDoble
@@ -59,7 +62,7 @@
             this.grpEliminarDoble.Controls.Add(this.lblCodg);
             this.grpEliminarDoble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpEliminarDoble.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.grpEliminarDoble.Location = new System.Drawing.Point(493, 30);
+            this.grpEliminarDoble.Location = new System.Drawing.Point(558, 25);
             this.grpEliminarDoble.Name = "grpEliminarDoble";
             this.grpEliminarDoble.Size = new System.Drawing.Size(261, 199);
             this.grpEliminarDoble.TabIndex = 3;
@@ -108,7 +111,7 @@
             this.grpElementoDoble.Controls.Add(this.lblCodigo);
             this.grpElementoDoble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpElementoDoble.ForeColor = System.Drawing.Color.LightBlue;
-            this.grpElementoDoble.Location = new System.Drawing.Point(207, 30);
+            this.grpElementoDoble.Location = new System.Drawing.Point(272, 25);
             this.grpElementoDoble.Name = "grpElementoDoble";
             this.grpElementoDoble.Size = new System.Drawing.Size(261, 199);
             this.grpElementoDoble.TabIndex = 2;
@@ -188,7 +191,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTabladedatos.Location = new System.Drawing.Point(373, 279);
+            this.dgvTabladedatos.Location = new System.Drawing.Point(335, 30);
             this.dgvTabladedatos.Name = "dgvTabladedatos";
             this.dgvTabladedatos.Size = new System.Drawing.Size(342, 150);
             this.dgvTabladedatos.TabIndex = 6;
@@ -211,30 +214,41 @@
             // LstDeDatos
             // 
             this.LstDeDatos.FormattingEnabled = true;
-            this.LstDeDatos.Location = new System.Drawing.Point(99, 279);
+            this.LstDeDatos.Location = new System.Drawing.Point(18, 33);
             this.LstDeDatos.Name = "LstDeDatos";
-            this.LstDeDatos.Size = new System.Drawing.Size(190, 147);
+            this.LstDeDatos.Size = new System.Drawing.Size(263, 147);
             this.LstDeDatos.TabIndex = 5;
             // 
             // grpDate
             // 
             this.grpDate.BackColor = System.Drawing.Color.FloralWhite;
+            this.grpDate.Controls.Add(this.dgvTabladedatos);
+            this.grpDate.Controls.Add(this.LstDeDatos);
             this.grpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.grpDate.Location = new System.Drawing.Point(76, 247);
+            this.grpDate.Location = new System.Drawing.Point(89, 246);
             this.grpDate.Name = "grpDate";
-            this.grpDate.Size = new System.Drawing.Size(678, 205);
+            this.grpDate.Size = new System.Drawing.Size(730, 205);
             this.grpDate.TabIndex = 7;
             this.grpDate.TabStop = false;
             this.grpDate.Text = "Listado en una lista y una Grilla";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources._0_F7Qnr7Zs_dobles_s_;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 199);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // ListaEnlazada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 481);
-            this.Controls.Add(this.dgvTabladedatos);
-            this.Controls.Add(this.LstDeDatos);
+            this.ClientSize = new System.Drawing.Size(836, 481);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpDate);
             this.Controls.Add(this.grpEliminarDoble);
             this.Controls.Add(this.grpElementoDoble);
@@ -245,6 +259,8 @@
             this.grpElementoDoble.ResumeLayout(false);
             this.grpElementoDoble.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabladedatos)).EndInit();
+            this.grpDate.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,5 +285,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ListBox LstDeDatos;
         private System.Windows.Forms.GroupBox grpDate;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
