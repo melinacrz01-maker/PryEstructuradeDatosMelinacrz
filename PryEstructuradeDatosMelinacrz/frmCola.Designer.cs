@@ -49,9 +49,11 @@
             this.lbltramt = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbdatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.grbElemento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbdatos
@@ -66,7 +68,7 @@
             this.grbdatos.Controls.Add(this.lblcodigo);
             this.grbdatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbdatos.ForeColor = System.Drawing.Color.Navy;
-            this.grbdatos.Location = new System.Drawing.Point(12, 25);
+            this.grbdatos.Location = new System.Drawing.Point(182, 31);
             this.grbdatos.Name = "grbdatos";
             this.grbdatos.Size = new System.Drawing.Size(338, 144);
             this.grbdatos.TabIndex = 0;
@@ -137,9 +139,9 @@
             // lstListado
             // 
             this.lstListado.FormattingEnabled = true;
-            this.lstListado.Location = new System.Drawing.Point(12, 215);
+            this.lstListado.Location = new System.Drawing.Point(13, 213);
             this.lstListado.Name = "lstListado";
-            this.lstListado.Size = new System.Drawing.Size(338, 173);
+            this.lstListado.Size = new System.Drawing.Size(280, 173);
             this.lstListado.TabIndex = 2;
             this.lstListado.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -150,7 +152,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTabla.Location = new System.Drawing.Point(395, 213);
+            this.dgvTabla.Location = new System.Drawing.Point(335, 213);
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.Size = new System.Drawing.Size(342, 175);
             this.dgvTabla.TabIndex = 3;
@@ -182,7 +184,7 @@
             this.grbElemento.Controls.Add(this.lblCode);
             this.grbElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbElemento.ForeColor = System.Drawing.Color.Navy;
-            this.grbElemento.Location = new System.Drawing.Point(386, 25);
+            this.grbElemento.Location = new System.Drawing.Point(537, 31);
             this.grbElemento.Name = "grbElemento";
             this.grbElemento.Size = new System.Drawing.Size(342, 144);
             this.grbElemento.TabIndex = 4;
@@ -249,12 +251,23 @@
             this.lblCode.TabIndex = 0;
             this.lblCode.Text = "Codigo:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.ChatGPT_Image_Sep_22__2026__10_03_03_AM;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(163, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(749, 413);
+            this.ClientSize = new System.Drawing.Size(898, 413);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grbElemento);
             this.Controls.Add(this.dgvTabla);
             this.Controls.Add(this.lstListado);
@@ -267,6 +280,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             this.grbElemento.ResumeLayout(false);
             this.grbElemento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,5 +308,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -50,10 +50,12 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbgrilla = new System.Windows.Forms.GroupBox();
             this.lstPila = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpElemento.SuspendLayout();
             this.grpEliminar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvgrillapila)).BeginInit();
             this.grbgrilla.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpElemento
@@ -65,7 +67,7 @@
             this.grpElemento.Controls.Add(this.lblTramite);
             this.grpElemento.Controls.Add(this.lblName);
             this.grpElemento.Controls.Add(this.lblCode);
-            this.grpElemento.Location = new System.Drawing.Point(218, 38);
+            this.grpElemento.Location = new System.Drawing.Point(295, 34);
             this.grpElemento.Name = "grpElemento";
             this.grpElemento.Size = new System.Drawing.Size(203, 192);
             this.grpElemento.TabIndex = 0;
@@ -148,7 +150,7 @@
             this.grpEliminar.Controls.Add(this.lblTramte);
             this.grpEliminar.Controls.Add(this.lblnombre);
             this.grpEliminar.Controls.Add(this.lblCodigo);
-            this.grpEliminar.Location = new System.Drawing.Point(521, 38);
+            this.grpEliminar.Location = new System.Drawing.Point(521, 34);
             this.grpEliminar.Name = "grpEliminar";
             this.grpEliminar.Size = new System.Drawing.Size(226, 192);
             this.grpEliminar.TabIndex = 1;
@@ -268,12 +270,24 @@
             this.lstPila.Size = new System.Drawing.Size(267, 160);
             this.lstPila.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.ChatGPT_Image_Sep_22__2026__09_57_27_AM;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 192);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(800, 467);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpEliminar);
             this.Controls.Add(this.grpElemento);
             this.Controls.Add(this.grbgrilla);
@@ -286,6 +300,7 @@
             this.grpEliminar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvgrillapila)).EndInit();
             this.grbgrilla.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -314,5 +329,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.GroupBox grbgrilla;
         private System.Windows.Forms.ListBox lstPila;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
