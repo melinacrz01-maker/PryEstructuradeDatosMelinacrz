@@ -167,6 +167,7 @@
             this.listaEnlazadaSimpleToolStripMenuItem.Name = "listaEnlazadaSimpleToolStripMenuItem";
             this.listaEnlazadaSimpleToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.listaEnlazadaSimpleToolStripMenuItem.Text = "Lista enlazada Simple";
+            this.listaEnlazadaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaEnlazadaSimpleToolStripMenuItem_Click);
             // 
             // listaDoblementeEnlazadaToolStripMenuItem
             // 

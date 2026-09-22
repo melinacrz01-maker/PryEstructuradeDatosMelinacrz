@@ -33,5 +33,10 @@ namespace PryEstructuradeDatosMelinacrz
         {
             FrmPila pila = new FrmPila(); pila.Show();
         }
+
+        private void listaEnlazadaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLista lista = new FrmLista(); lista.Show();
+        }
     }
 }
