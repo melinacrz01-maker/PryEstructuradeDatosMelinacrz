@@ -257,6 +257,7 @@
             this.Controls.Add(this.grpElementoDoble);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListaEnlazada";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista Doblemente Enlazada";
             this.grpEliminarDoble.ResumeLayout(false);
             this.grpEliminarDoble.PerformLayout();

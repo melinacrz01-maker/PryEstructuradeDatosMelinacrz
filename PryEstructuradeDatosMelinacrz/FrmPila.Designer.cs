@@ -297,6 +297,7 @@
             this.Controls.Add(this.grbgrilla);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPila";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pila";
             this.Load += new System.EventHandler(this.FrmPila_Load);
             this.grpElemento.ResumeLayout(false);
