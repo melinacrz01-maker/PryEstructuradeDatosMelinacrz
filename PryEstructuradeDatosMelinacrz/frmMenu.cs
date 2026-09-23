@@ -38,5 +38,10 @@ namespace PryEstructuradeDatosMelinacrz
         {
             FrmLista lista = new FrmLista(); lista.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

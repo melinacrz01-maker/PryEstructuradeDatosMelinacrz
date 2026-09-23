@@ -32,10 +32,6 @@
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDelDesarroladorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreYApellidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.añoAcademicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructuraLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,11 +78,7 @@
             // 
             this.datosDelDesarroladorToolStripMenuItem.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.datosDelDesarroladorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nombreYApellidoToolStripMenuItem,
-            this.clientesToolStripMenuItem,
-            this.materiaToolStripMenuItem,
-            this.comisionToolStripMenuItem,
-            this.añoAcademicoToolStripMenuItem});
+            this.nombreYApellidoToolStripMenuItem});
             this.datosDelDesarroladorToolStripMenuItem.Name = "datosDelDesarroladorToolStripMenuItem";
             this.datosDelDesarroladorToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.datosDelDesarroladorToolStripMenuItem.Text = "Datos del Desarrolador";
@@ -97,36 +89,13 @@
             this.nombreYApellidoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.nombreYApellidoToolStripMenuItem.Text = "Nombre y apellido";
             // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.clientesToolStripMenuItem.Text = "Carrera";
-            // 
-            // materiaToolStripMenuItem
-            // 
-            this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
-            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.materiaToolStripMenuItem.Text = "Materia";
-            // 
-            // comisionToolStripMenuItem
-            // 
-            this.comisionToolStripMenuItem.Name = "comisionToolStripMenuItem";
-            this.comisionToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.comisionToolStripMenuItem.Text = "Comision";
-            // 
-            // añoAcademicoToolStripMenuItem
-            // 
-            this.añoAcademicoToolStripMenuItem.Name = "añoAcademicoToolStripMenuItem";
-            this.añoAcademicoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.añoAcademicoToolStripMenuItem.Text = "Año academico";
-            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // estructuraLinealesToolStripMenuItem
             // 
@@ -294,10 +263,6 @@
         private System.Windows.Forms.ToolStripMenuItem operacionesEnBaseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasVariasConOperacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nombreYApellidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem materiaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comisionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem añoAcademicoToolStripMenuItem;
     }
 }
 

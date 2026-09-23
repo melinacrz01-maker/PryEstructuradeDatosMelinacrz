@@ -86,7 +86,7 @@ namespace PryEstructuradeDatosMelinacrz
             lista.Items.Clear();
             while (aux != null)
             {
-                lista.Items.Add(aux.tramite);
+                lista.Items.Add(aux.codigo.ToString() + " | " + aux.nombre + ", " + aux.tramite);
                 aux = aux.siguiente;
             }
         }

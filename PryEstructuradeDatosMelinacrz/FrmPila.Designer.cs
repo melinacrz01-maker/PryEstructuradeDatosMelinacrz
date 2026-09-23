@@ -159,6 +159,7 @@
             // 
             // txtTram
             // 
+            this.txtTram.Enabled = false;
             this.txtTram.Location = new System.Drawing.Point(96, 87);
             this.txtTram.Name = "txtTram";
             this.txtTram.Size = new System.Drawing.Size(100, 20);
@@ -166,6 +167,7 @@
             // 
             // txtName
             // 
+            this.txtName.Enabled = false;
             this.txtName.Location = new System.Drawing.Point(96, 59);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
@@ -173,6 +175,7 @@
             // 
             // txtCode
             // 
+            this.txtCode.Enabled = false;
             this.txtCode.Location = new System.Drawing.Point(96, 32);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(100, 20);

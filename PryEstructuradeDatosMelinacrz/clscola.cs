@@ -78,54 +78,5 @@ namespace PryEstructuradeDatosMelinacrz
 
             return frente;
         }
-
-        //Atiende de a uno hasta sacar el nodo con ese codigo.
-        //Sigue siendo cola: adentro solo llama a EliminarCola (Dequeue).
-        //Devuelve cuantos nodos se atendieron, 0 si el codigo no estaba.
-        public int EliminarColaHasta(int codigo)
-        {
-            //Primero verifico que exista, si no la cola se vaciaria buscandolo
-            clsnodo aux = Primero;
-
-            while (aux != null && aux.Codigo != codigo)
-            {
-                aux = aux.siguiente;
-            }
-
-            if (aux == null)
-            {
-                return 0;
-            }
-
-            int cantidad = 0;
-            clsnodo frente;
-
-            do
-            {
-                frente = EliminarCola();
-                cantidad++;
-            }
-            while (frente.Codigo != codigo);
-
-            return cantidad;
-        }
-
-        public int EliminarCola(clsnodo nodoAEliminar, ListBox lstcola)
-        {
-            int cantidad = EliminarColaHasta(nodoAEliminar.Codigo);
-
-            recorrrer(lstcola);
-
-            return cantidad;
-        }
-
-        public int EliminarCola(clsnodo nodoAEliminar, DataGridView dgvcola)
-        {
-            int cantidad = EliminarColaHasta(nodoAEliminar.Codigo);
-
-            recorrer(dgvcola);
-
-            return cantidad;
-        }
     }
 }

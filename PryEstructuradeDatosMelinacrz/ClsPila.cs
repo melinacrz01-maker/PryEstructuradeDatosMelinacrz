@@ -104,50 +104,5 @@ namespace PryEstructuradeDatosMelinacrz
 
             return tope;
         }
-
-        //Desapila de a uno hasta sacar el nodo con ese codigo.
-        //Sigue siendo pila: adentro solo llama a EliminarPila (Pop).
-        //Devuelve cuantos nodos se desapilaron, 0 si el codigo no estaba.
-        public int EliminarPilaHasta(int codigo)
-        {
-            //Primero verifico que exista, si no la pila se vaciaria buscandolo
-            clsnodo aux = Primero;
-
-            while (aux != null && aux.Codigo != codigo)
-            {
-                aux = aux.siguiente;
-            }
-
-            if (aux == null)
-            {
-                return 0;
-            }
-
-            int cantidad = 0;
-            clsnodo tope;
-
-            do
-            {
-                tope = EliminarPila();
-                cantidad++;
-            }
-            while (tope.Codigo != codigo);
-
-            return cantidad;
-        }
-
-        public void EliminarPila(clsnodo nodoAEliminar, ListBox lbListado)
-        {
-            EliminarPilaHasta(nodoAEliminar.Codigo);
-
-            Recorrer(lbListado);
-        }
-
-        public void EliminarPila(clsnodo nodoAEliminar, DataGridView dgvListado)
-        {
-            EliminarPilaHasta(nodoAEliminar.Codigo);
-
-            RecorrerDgv(dgvListado);
-        }
     }
 }

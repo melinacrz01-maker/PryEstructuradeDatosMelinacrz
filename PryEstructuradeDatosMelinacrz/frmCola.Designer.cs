@@ -205,6 +205,7 @@
             // 
             // txtramit
             // 
+            this.txtramit.Enabled = false;
             this.txtramit.Location = new System.Drawing.Point(79, 103);
             this.txtramit.Name = "txtramit";
             this.txtramit.Size = new System.Drawing.Size(124, 21);
@@ -212,6 +213,7 @@
             // 
             // txtname
             // 
+            this.txtname.Enabled = false;
             this.txtname.Location = new System.Drawing.Point(81, 65);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(122, 21);
@@ -219,6 +221,7 @@
             // 
             // txtCodigo
             // 
+            this.txtCodigo.Enabled = false;
             this.txtCodigo.Location = new System.Drawing.Point(81, 28);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(122, 21);

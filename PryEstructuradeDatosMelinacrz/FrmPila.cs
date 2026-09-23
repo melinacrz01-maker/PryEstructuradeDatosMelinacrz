@@ -54,20 +54,14 @@ namespace PryEstructuradeDatosMelinacrz
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            clsnodo nuevo = new clsnodo();
+            clsnodo sale = objPila.EliminarPila();
 
-            nuevo.Codigo = Convert.ToInt32(txtCode.Text);
-            nuevo.Nombre = txtName.Text;
-            nuevo.Tramite = txtTram.Text;
+            txtCode.Text = sale.Codigo.ToString();
+            txtName.Text = sale.Nombre;
+            txtTram.Text = sale.Tramite;
 
-            objPila.EliminarPila(nuevo, lstPila);
-            objPila.EliminarPila(nuevo, dgvgrillapila);
-
-            txtCode.Clear();
-            txtName.Clear();
-            txtTram.Clear();
-
-            txtCode.Focus();
+            objPila.Recorrer(lstPila);
+            objPila.RecorrerDgv(dgvgrillapila);
         }
     }
 }
