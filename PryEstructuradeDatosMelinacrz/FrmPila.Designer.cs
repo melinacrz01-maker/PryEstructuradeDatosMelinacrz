@@ -68,6 +68,8 @@
             this.grpElemento.Controls.Add(this.lblTramite);
             this.grpElemento.Controls.Add(this.lblName);
             this.grpElemento.Controls.Add(this.lblCode);
+            this.grpElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpElemento.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.grpElemento.Location = new System.Drawing.Point(295, 34);
             this.grpElemento.Name = "grpElemento";
             this.grpElemento.Size = new System.Drawing.Size(203, 192);
@@ -79,21 +81,21 @@
             // 
             this.txtTramite.Location = new System.Drawing.Point(72, 93);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(100, 20);
+            this.txtTramite.Size = new System.Drawing.Size(100, 22);
             this.txtTramite.TabIndex = 6;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(72, 63);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(100, 22);
             this.txtNombre.TabIndex = 5;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(72, 32);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(100, 22);
             this.txtCodigo.TabIndex = 4;
             // 
             // btnAgregar
@@ -151,6 +153,8 @@
             this.grpEliminar.Controls.Add(this.lblTramte);
             this.grpEliminar.Controls.Add(this.lblnombre);
             this.grpEliminar.Controls.Add(this.lblCodigo);
+            this.grpEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.grpEliminar.Location = new System.Drawing.Point(521, 34);
             this.grpEliminar.Name = "grpEliminar";
             this.grpEliminar.Size = new System.Drawing.Size(226, 192);
@@ -163,7 +167,7 @@
             this.txtTram.Enabled = false;
             this.txtTram.Location = new System.Drawing.Point(96, 87);
             this.txtTram.Name = "txtTram";
-            this.txtTram.Size = new System.Drawing.Size(100, 20);
+            this.txtTram.Size = new System.Drawing.Size(100, 22);
             this.txtTram.TabIndex = 13;
             // 
             // txtName
@@ -171,7 +175,7 @@
             this.txtName.Enabled = false;
             this.txtName.Location = new System.Drawing.Point(96, 59);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.Size = new System.Drawing.Size(100, 22);
             this.txtName.TabIndex = 12;
             // 
             // txtCode
@@ -179,7 +183,7 @@
             this.txtCode.Enabled = false;
             this.txtCode.Location = new System.Drawing.Point(96, 32);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(100, 20);
+            this.txtCode.Size = new System.Drawing.Size(100, 22);
             this.txtCode.TabIndex = 11;
             // 
             // btnEliminar
@@ -259,6 +263,8 @@
             // 
             this.grbgrilla.Controls.Add(this.lstPila);
             this.grbgrilla.Controls.Add(this.dgvgrillapila);
+            this.grbgrilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbgrilla.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.grbgrilla.Location = new System.Drawing.Point(52, 251);
             this.grbgrilla.Name = "grbgrilla";
             this.grbgrilla.Size = new System.Drawing.Size(695, 204);
@@ -269,9 +275,10 @@
             // lstPila
             // 
             this.lstPila.FormattingEnabled = true;
+            this.lstPila.ItemHeight = 15;
             this.lstPila.Location = new System.Drawing.Point(35, 23);
             this.lstPila.Name = "lstPila";
-            this.lstPila.Size = new System.Drawing.Size(267, 160);
+            this.lstPila.Size = new System.Drawing.Size(267, 154);
             this.lstPila.TabIndex = 3;
             // 
             // pictureBox1
