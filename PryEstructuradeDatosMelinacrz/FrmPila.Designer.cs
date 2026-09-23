@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPila));
             this.grpElemento = new System.Windows.Forms.GroupBox();
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -294,8 +295,9 @@
             this.Controls.Add(this.grpEliminar);
             this.Controls.Add(this.grpElemento);
             this.Controls.Add(this.grbgrilla);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPila";
-            this.Text = "FrmPila";
+            this.Text = "Pila";
             this.Load += new System.EventHandler(this.FrmPila_Load);
             this.grpElemento.ResumeLayout(false);
             this.grpElemento.PerformLayout();

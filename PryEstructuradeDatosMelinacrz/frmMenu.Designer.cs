@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDelDesarroladorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -145,6 +146,7 @@
             this.listaDoblementeEnlazadaToolStripMenuItem.Name = "listaDoblementeEnlazadaToolStripMenuItem";
             this.listaDoblementeEnlazadaToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.listaDoblementeEnlazadaToolStripMenuItem.Text = "Lista doblemente enlazada";
+            this.listaDoblementeEnlazadaToolStripMenuItem.Click += new System.EventHandler(this.listaDoblementeEnlazadaToolStripMenuItem_Click);
             // 
             // estructuraNoLinealesToolStripMenuItem
             // 
@@ -231,10 +233,12 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(472, 524);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

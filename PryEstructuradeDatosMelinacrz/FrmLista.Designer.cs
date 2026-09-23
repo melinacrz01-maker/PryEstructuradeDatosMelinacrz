@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLista));
             this.grpElemento = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtTramite = new System.Windows.Forms.TextBox();
@@ -257,8 +258,9 @@
             this.Controls.Add(this.grpElemento);
             this.Controls.Add(this.grbGrilladatos);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLista";
-            this.Text = "FrmLista";
+            this.Text = "ListaSimple";
             this.grpElemento.ResumeLayout(false);
             this.grpElemento.PerformLayout();
             this.grpEliminar.ResumeLayout(false);

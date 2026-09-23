@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaEnlazada));
             this.grpEliminarDoble = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnEliminarDatos = new System.Windows.Forms.Button();
@@ -88,6 +89,7 @@
             this.btnEliminarDatos.TabIndex = 6;
             this.btnEliminarDatos.Text = "Eliminar";
             this.btnEliminarDatos.UseVisualStyleBackColor = false;
+            this.btnEliminarDatos.Click += new System.EventHandler(this.btnEliminarDatos_Click);
             // 
             // lblCodg
             // 
@@ -129,6 +131,7 @@
             this.btnAgregarDatos.TabIndex = 6;
             this.btnAgregarDatos.Text = "Agregar";
             this.btnAgregarDatos.UseVisualStyleBackColor = false;
+            this.btnAgregarDatos.Click += new System.EventHandler(this.btnAgregarDatos_Click);
             // 
             // txtTramite
             // 
@@ -252,6 +255,7 @@
             this.Controls.Add(this.grpDate);
             this.Controls.Add(this.grpEliminarDoble);
             this.Controls.Add(this.grpElementoDoble);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListaEnlazada";
             this.Text = "Lista Doblemente Enlazada";
             this.grpEliminarDoble.ResumeLayout(false);

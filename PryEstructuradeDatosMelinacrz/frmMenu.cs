@@ -41,7 +41,21 @@ namespace PryEstructuradeDatosMelinacrz
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            DialogResult respuesta = MessageBox.Show(
+       "¿Deseás salir de la aplicación?",
+       "Confirmar salida",
+       MessageBoxButtons.YesNo,
+       MessageBoxIcon.Question);
+
+
+            if (respuesta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+        private void listaDoblementeEnlazadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaEnlazada lista = new ListaEnlazada(); lista.Show();
         }
     }
 }
