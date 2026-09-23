@@ -137,10 +137,10 @@
     <None Include="Resources\images.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ChatGPT Image Sep 22, 2026, 09_57_27 AM.png" />
+    <None Include="Resources\imgPila.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ChatGPT Image Sep 22, 2026, 10_03_03 AM.png" />
+    <None Include="Resources\imgCola.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

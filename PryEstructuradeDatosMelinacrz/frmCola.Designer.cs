@@ -256,7 +256,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.ChatGPT_Image_Sep_22__2026__10_03_03_AM;
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.imgCola;
             this.pictureBox1.Location = new System.Drawing.Point(13, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 144);

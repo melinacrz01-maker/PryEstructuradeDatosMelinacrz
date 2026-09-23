@@ -276,7 +276,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.ChatGPT_Image_Sep_22__2026__09_57_27_AM;
+            this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.imgPila;
             this.pictureBox1.Location = new System.Drawing.Point(52, 34);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 192);

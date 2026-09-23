@@ -73,9 +73,9 @@ namespace PryEstructuradeDatosMelinacrz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT_Image_Sep_22__2026__09_57_27_AM {
+        internal static System.Drawing.Bitmap imgPila {
             get {
-                object obj = ResourceManager.GetObject("ChatGPT Image Sep 22, 2026, 09_57_27 AM", resourceCulture);
+                object obj = ResourceManager.GetObject("imgPila", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace PryEstructuradeDatosMelinacrz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT_Image_Sep_22__2026__10_03_03_AM {
+        internal static System.Drawing.Bitmap imgCola {
             get {
-                object obj = ResourceManager.GetObject("ChatGPT Image Sep 22, 2026, 10_03_03 AM", resourceCulture);
+                object obj = ResourceManager.GetObject("imgCola", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
