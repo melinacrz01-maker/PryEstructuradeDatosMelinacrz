@@ -70,7 +70,7 @@
             this.grpElemento.Controls.Add(this.lblCode);
             this.grpElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpElemento.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grpElemento.Location = new System.Drawing.Point(295, 34);
+            this.grpElemento.Location = new System.Drawing.Point(342, 34);
             this.grpElemento.Name = "grpElemento";
             this.grpElemento.Size = new System.Drawing.Size(203, 192);
             this.grpElemento.TabIndex = 0;
@@ -155,7 +155,7 @@
             this.grpEliminar.Controls.Add(this.lblCodigo);
             this.grpEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grpEliminar.Location = new System.Drawing.Point(521, 34);
+            this.grpEliminar.Location = new System.Drawing.Point(577, 34);
             this.grpEliminar.Name = "grpEliminar";
             this.grpEliminar.Size = new System.Drawing.Size(226, 192);
             this.grpEliminar.TabIndex = 1;
@@ -234,14 +234,15 @@
             // 
             // dgvgrillapila
             // 
+            this.dgvgrillapila.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvgrillapila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvgrillapila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvgrillapila.Location = new System.Drawing.Point(321, 15);
+            this.dgvgrillapila.Location = new System.Drawing.Point(290, 29);
             this.dgvgrillapila.Name = "dgvgrillapila";
-            this.dgvgrillapila.Size = new System.Drawing.Size(333, 168);
+            this.dgvgrillapila.Size = new System.Drawing.Size(465, 154);
             this.dgvgrillapila.TabIndex = 2;
             // 
             // Column1
@@ -265,9 +266,9 @@
             this.grbgrilla.Controls.Add(this.dgvgrillapila);
             this.grbgrilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbgrilla.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grbgrilla.Location = new System.Drawing.Point(52, 251);
+            this.grbgrilla.Location = new System.Drawing.Point(12, 251);
             this.grbgrilla.Name = "grbgrilla";
-            this.grbgrilla.Size = new System.Drawing.Size(695, 204);
+            this.grbgrilla.Size = new System.Drawing.Size(791, 204);
             this.grbgrilla.TabIndex = 3;
             this.grbgrilla.TabStop = false;
             this.grbgrilla.Text = "Listado en una Lista y una Grilla";
@@ -276,7 +277,7 @@
             // 
             this.lstPila.FormattingEnabled = true;
             this.lstPila.ItemHeight = 15;
-            this.lstPila.Location = new System.Drawing.Point(35, 23);
+            this.lstPila.Location = new System.Drawing.Point(6, 29);
             this.lstPila.Name = "lstPila";
             this.lstPila.Size = new System.Drawing.Size(267, 154);
             this.lstPila.TabIndex = 3;
@@ -285,9 +286,9 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.imgPila;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 34);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(303, 192);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -296,8 +297,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(800, 467);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(827, 467);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpEliminar);
             this.Controls.Add(this.grpElemento);

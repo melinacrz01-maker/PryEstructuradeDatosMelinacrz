@@ -69,9 +69,9 @@
             this.grbdatos.Controls.Add(this.lblcodigo);
             this.grbdatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbdatos.ForeColor = System.Drawing.Color.Navy;
-            this.grbdatos.Location = new System.Drawing.Point(28, 31);
+            this.grbdatos.Location = new System.Drawing.Point(12, 26);
             this.grbdatos.Name = "grbdatos";
-            this.grbdatos.Size = new System.Drawing.Size(338, 144);
+            this.grbdatos.Size = new System.Drawing.Size(346, 149);
             this.grbdatos.TabIndex = 0;
             this.grbdatos.TabStop = false;
             this.grbdatos.Text = "Datos";
@@ -81,7 +81,7 @@
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.Navy;
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnAgregar.Location = new System.Drawing.Point(219, 89);
+            this.btnAgregar.Location = new System.Drawing.Point(221, 89);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(108, 36);
             this.btnAgregar.TabIndex = 6;
@@ -140,22 +140,23 @@
             // lstListado
             // 
             this.lstListado.FormattingEnabled = true;
-            this.lstListado.Location = new System.Drawing.Point(163, 215);
+            this.lstListado.Location = new System.Drawing.Point(146, 215);
             this.lstListado.Name = "lstListado";
-            this.lstListado.Size = new System.Drawing.Size(280, 173);
+            this.lstListado.Size = new System.Drawing.Size(239, 173);
             this.lstListado.TabIndex = 2;
             this.lstListado.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // dgvTabla
             // 
+            this.dgvTabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTabla.Location = new System.Drawing.Point(473, 215);
+            this.dgvTabla.Location = new System.Drawing.Point(399, 215);
             this.dgvTabla.Name = "dgvTabla";
-            this.dgvTabla.Size = new System.Drawing.Size(345, 173);
+            this.dgvTabla.Size = new System.Drawing.Size(416, 173);
             this.dgvTabla.TabIndex = 3;
             // 
             // Column1
@@ -185,9 +186,9 @@
             this.grbElemento.Controls.Add(this.lblCode);
             this.grbElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbElemento.ForeColor = System.Drawing.Color.Navy;
-            this.grbElemento.Location = new System.Drawing.Point(473, 31);
+            this.grbElemento.Location = new System.Drawing.Point(399, 26);
             this.grbElemento.Name = "grbElemento";
-            this.grbElemento.Size = new System.Drawing.Size(342, 144);
+            this.grbElemento.Size = new System.Drawing.Size(416, 149);
             this.grbElemento.TabIndex = 4;
             this.grbElemento.TabStop = false;
             this.grbElemento.Text = "Elemento a Eliminar";
@@ -196,7 +197,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Navy;
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnEliminar.Location = new System.Drawing.Point(223, 92);
+            this.btnEliminar.Location = new System.Drawing.Point(289, 91);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(107, 36);
             this.btnEliminar.TabIndex = 6;
@@ -207,7 +208,7 @@
             // txtramit
             // 
             this.txtramit.Enabled = false;
-            this.txtramit.Location = new System.Drawing.Point(79, 103);
+            this.txtramit.Location = new System.Drawing.Point(121, 109);
             this.txtramit.Name = "txtramit";
             this.txtramit.Size = new System.Drawing.Size(124, 21);
             this.txtramit.TabIndex = 5;
@@ -215,7 +216,7 @@
             // txtname
             // 
             this.txtname.Enabled = false;
-            this.txtname.Location = new System.Drawing.Point(81, 65);
+            this.txtname.Location = new System.Drawing.Point(123, 71);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(122, 21);
             this.txtname.TabIndex = 4;
@@ -223,7 +224,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(81, 28);
+            this.txtCodigo.Location = new System.Drawing.Point(123, 34);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(122, 21);
             this.txtCodigo.TabIndex = 3;
@@ -231,7 +232,7 @@
             // lbltramt
             // 
             this.lbltramt.AutoSize = true;
-            this.lbltramt.Location = new System.Drawing.Point(13, 106);
+            this.lbltramt.Location = new System.Drawing.Point(55, 112);
             this.lbltramt.Name = "lbltramt";
             this.lbltramt.Size = new System.Drawing.Size(60, 15);
             this.lbltramt.TabIndex = 2;
@@ -240,7 +241,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(13, 68);
+            this.lblNombre.Location = new System.Drawing.Point(55, 74);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(62, 15);
             this.lblNombre.TabIndex = 1;
@@ -249,7 +250,7 @@
             // lblCode
             // 
             this.lblCode.AutoSize = true;
-            this.lblCode.Location = new System.Drawing.Point(13, 31);
+            this.lblCode.Location = new System.Drawing.Point(55, 37);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(56, 15);
             this.lblCode.TabIndex = 0;
@@ -258,7 +259,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PryEstructuradeDatosMelinacrz.Properties.Resources.imgCola;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 213);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 215);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(102, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -270,7 +271,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(848, 413);
+            this.ClientSize = new System.Drawing.Size(835, 413);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grbElemento);
             this.Controls.Add(this.dgvTabla);

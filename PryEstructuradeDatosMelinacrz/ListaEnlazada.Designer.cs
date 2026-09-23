@@ -189,14 +189,15 @@
             // 
             // dgvTabladedatos
             // 
+            this.dgvTabladedatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTabladedatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabladedatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTabladedatos.Location = new System.Drawing.Point(335, 30);
+            this.dgvTabladedatos.Location = new System.Drawing.Point(313, 21);
             this.dgvTabladedatos.Name = "dgvTabladedatos";
-            this.dgvTabladedatos.Size = new System.Drawing.Size(342, 150);
+            this.dgvTabladedatos.Size = new System.Drawing.Size(477, 172);
             this.dgvTabladedatos.TabIndex = 6;
             // 
             // Column1
@@ -219,7 +220,7 @@
             this.LstDeDatos.FormattingEnabled = true;
             this.LstDeDatos.Location = new System.Drawing.Point(18, 33);
             this.LstDeDatos.Name = "LstDeDatos";
-            this.LstDeDatos.Size = new System.Drawing.Size(263, 147);
+            this.LstDeDatos.Size = new System.Drawing.Size(263, 160);
             this.LstDeDatos.TabIndex = 5;
             // 
             // grpDate
@@ -229,9 +230,9 @@
             this.grpDate.Controls.Add(this.LstDeDatos);
             this.grpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.grpDate.Location = new System.Drawing.Point(89, 246);
+            this.grpDate.Location = new System.Drawing.Point(29, 246);
             this.grpDate.Name = "grpDate";
-            this.grpDate.Size = new System.Drawing.Size(730, 205);
+            this.grpDate.Size = new System.Drawing.Size(818, 214);
             this.grpDate.TabIndex = 7;
             this.grpDate.TabStop = false;
             this.grpDate.Text = "Listado en una lista y una Grilla";
@@ -250,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 481);
+            this.ClientSize = new System.Drawing.Size(869, 481);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpDate);
             this.Controls.Add(this.grpEliminarDoble);

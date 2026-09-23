@@ -190,21 +190,22 @@
             // lstLista
             // 
             this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(40, 35);
+            this.lstLista.Location = new System.Drawing.Point(21, 32);
             this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(286, 147);
+            this.lstLista.Size = new System.Drawing.Size(286, 160);
             this.lstLista.TabIndex = 2;
             // 
             // dgvTable
             // 
+            this.dgvTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvTable.Location = new System.Drawing.Point(397, 32);
+            this.dgvTable.Location = new System.Drawing.Point(329, 19);
             this.dgvTable.Name = "dgvTable";
-            this.dgvTable.Size = new System.Drawing.Size(342, 150);
+            this.dgvTable.Size = new System.Drawing.Size(437, 173);
             this.dgvTable.TabIndex = 3;
             // 
             // Column1
@@ -229,9 +230,9 @@
             this.grbGrilladatos.Controls.Add(this.dgvTable);
             this.grbGrilladatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbGrilladatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.grbGrilladatos.Location = new System.Drawing.Point(12, 280);
+            this.grbGrilladatos.Location = new System.Drawing.Point(12, 255);
             this.grbGrilladatos.Name = "grbGrilladatos";
-            this.grbGrilladatos.Size = new System.Drawing.Size(788, 205);
+            this.grbGrilladatos.Size = new System.Drawing.Size(788, 216);
             this.grbGrilladatos.TabIndex = 4;
             this.grbGrilladatos.TabStop = false;
             this.grbGrilladatos.Text = "Listado en una lista y una Grilla";
