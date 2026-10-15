@@ -198,6 +198,7 @@
             this.mostrarTablaToolStripMenuItem.Name = "mostrarTablaToolStripMenuItem";
             this.mostrarTablaToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
             this.mostrarTablaToolStripMenuItem.Text = "Mostrar Tabla";
+            this.mostrarTablaToolStripMenuItem.Click += new System.EventHandler(this.mostrarTablaToolStripMenuItem_Click);
             // 
             // consultaDeBaseDeDatosToolStripMenuItem
             // 

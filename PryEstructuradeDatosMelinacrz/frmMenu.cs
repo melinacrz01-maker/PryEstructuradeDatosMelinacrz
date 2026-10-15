@@ -57,5 +57,11 @@ namespace PryEstructuradeDatosMelinacrz
         {
             ListaEnlazada lista = new ListaEnlazada(); lista.Show();
         }
+
+        private void mostrarTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMuestra muestra = new frmMuestra(); muestra.Show();
+
+        }
     }
 }
