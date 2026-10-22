@@ -44,17 +44,20 @@
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(344, 392);
+            this.btnMostrar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.ForeColor = System.Drawing.Color.Navy;
+            this.btnMostrar.Location = new System.Drawing.Point(344, 398);
             this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(171, 30);
+            this.btnMostrar.Size = new System.Drawing.Size(171, 38);
             this.btnMostrar.TabIndex = 1;
             this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.UseVisualStyleBackColor = false;
             // 
             // cmbDatos
             // 
             this.cmbDatos.FormattingEnabled = true;
-            this.cmbDatos.Location = new System.Drawing.Point(145, 398);
+            this.cmbDatos.Location = new System.Drawing.Point(145, 408);
             this.cmbDatos.Name = "cmbDatos";
             this.cmbDatos.Size = new System.Drawing.Size(171, 21);
             this.cmbDatos.TabIndex = 2;
@@ -63,8 +66,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(654, 495);
+            this.BackColor = System.Drawing.Color.Beige;
+            this.ClientSize = new System.Drawing.Size(654, 467);
             this.Controls.Add(this.cmbDatos);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.dataGridView1);

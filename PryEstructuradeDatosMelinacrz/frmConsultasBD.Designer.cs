@@ -52,9 +52,9 @@
             // 
             // btnlistarconsultas
             // 
-            this.btnlistarconsultas.BackColor = System.Drawing.Color.MintCream;
+            this.btnlistarconsultas.BackColor = System.Drawing.Color.Navy;
             this.btnlistarconsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlistarconsultas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnlistarconsultas.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnlistarconsultas.Location = new System.Drawing.Point(535, 261);
             this.btnlistarconsultas.Name = "btnlistarconsultas";
             this.btnlistarconsultas.Size = new System.Drawing.Size(113, 39);
@@ -66,6 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(707, 597);
             this.Controls.Add(this.btnlistarconsultas);
             this.Controls.Add(this.listConsultas);
